@@ -28,7 +28,7 @@ const publicConfig = {
     plugins: [
         // 每次打包清理test
         new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: ['**/*', '!api/user.json'],
+            cleanOnceBeforeBuildPatterns: ['**/*', '!api', '!api/user.json'],
         }),
         // 压缩生成的文件
         new UglifyJSPlugin(),
